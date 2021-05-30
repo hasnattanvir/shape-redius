@@ -1,0 +1,41 @@
+.pentagon_s_b,.pentagon_s_f {
+    display: inline-block;
+    width: 500px;
+    color: red;
+    filter: url(#round);
+}
+
+.pentagon_s_b::before {
+    position: relative;
+    content: "";
+    display: block;
+    padding-top: 86.6%;
+    background-color: blue;
+    -webkit-clip-path: polygon(21% 0, 100% 0, 100% 100%, 23% 100%, 0 25%);
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 23% 100%, 0 25%);
+}
+
+
+.pentagon_s_f{
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+
+.pentagon_s_f::before {
+    background: url('themoon.jpeg');
+    content: "";
+    display: block;
+    padding-top: 86.6%;
+   -webkit-clip-path: polygon(21% 0, 100% 0, 100% 100%, 23% 100%, 0 25%);
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 23% 100%, 0 25%);
+}
+
+.test{
+    position: relative;
+}
+.d-flex{
+    justify-content: flex-end;
+}
